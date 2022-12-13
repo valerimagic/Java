@@ -5,6 +5,7 @@ public class BonusScore {
         Scanner input = new Scanner(System.in);
 
         int number = Integer.parseInt(input.nextLine());
+        int number2 = Integer.parseInt(input.nextLine());
 
     }
 }
