@@ -8,6 +8,7 @@ public class BonusScore {
         int number2 = Integer.parseInt(input.nextLine());
         int number3 = Integer.parseInt(input.nextLine());
         int number4 = Integer.parseInt(input.nextLine());
+        int number5 = Integer.parseInt(input.nextLine());
 
     }
 }
