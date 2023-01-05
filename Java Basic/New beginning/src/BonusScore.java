@@ -20,6 +20,7 @@ public class BonusScore {
         int number14 = Integer.parseInt(input.nextLine());
         int number15 = Integer.parseInt(input.nextLine());
         int number16 = Integer.parseInt(input.nextLine());
+        int number17 = Integer.parseInt(input.nextLine());
 
     }
 }
