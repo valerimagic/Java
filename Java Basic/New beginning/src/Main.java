@@ -4,7 +4,7 @@ public class Main {
         System.out.print("Spasov  ");
         System.out.print("Hristov  ");
         System.out.print(" from Shumen, ");
-        System.out.print("Bulgaria ");
+        System.out.print("Bulgaria  ");
         
     }
 }
