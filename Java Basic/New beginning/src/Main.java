@@ -8,9 +8,9 @@ public class Main {
         System.out.print("   from   Shumen, ");
         System.out.print("   Bulgaria  ");
 
+        int number = new int[20];
+        number[1] = 5;
+        System.out.println(number[1]);
 
-
-
-        
     }
 }
