@@ -21,8 +21,6 @@ public class Subsequence {
                 currentLength = 1;
             }
         }
-
-        
         System.out.println(longestLength);
     }
 }
