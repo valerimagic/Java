@@ -22,5 +22,21 @@ public class Subsequence {
             }
         }
         System.out.println(longestLength);
+
+        int [] array = new int[] {42};
+
+        incrementIndex(array, 0);
+        System.out.println(array[0]);
+
+    }
+
+
+
+
+    public static void incrementIndex(int[] array, int index){
+        array[index]++;
+        array = new int[]{69};
+        System.out.println(array[0]);
+
     }
 }
