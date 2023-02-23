@@ -35,8 +35,7 @@ public class Subsequence {
     private string getMax(string i, int i1) {
         
     }
-
-
+    
     public static void incrementIndex(int[] array, int index){
         array[index]++;
         array = new int[]{69};
