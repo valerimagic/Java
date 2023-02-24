@@ -39,5 +39,8 @@ public class Subsequence {
         array[index]++;
         array = new int[]{69};
         System.out.println(array[0]);
+
+
+        
     }
 }
