@@ -31,8 +31,8 @@ public class Subsequence {
     }
 
     int x = getMax(5, 10);
-    private string getMax(string i, int i1) {
-        
+    private int getMax(int i, int x) {
+        return i;
     }
 
     public static void incrementIndex(int[] array, int index){
