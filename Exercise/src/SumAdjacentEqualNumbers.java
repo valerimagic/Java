@@ -12,5 +12,8 @@ public class SumAdjacentEqualNumbers {
                         .collect(Collectors.toList());
 
 
+        
+
+
     }
 }
