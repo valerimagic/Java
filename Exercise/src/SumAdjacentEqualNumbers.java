@@ -13,6 +13,7 @@ public class SumAdjacentEqualNumbers {
 
 
 
+        int a = 5;
         
 
 
