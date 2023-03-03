@@ -6,17 +6,36 @@ public class SumAdjacentEqualNumbers {
 
         Scanner scanner = new Scanner(System.in);
 
-        List<Double> numbers =
-                Arrays.stream(scanner.nextLine().split(""))
-                        .map(Double::parseDouble)
-                        .collect(Collectors.toList());
+        //List<Double> numbers =
+                //Arrays.stream(scanner.nextLine().split(""))
+                  //      .map(Double::parseDouble)
+                       // .collect(Collectors.toList());
 
 
 
-        int a = 5;
-        int b = 10;
-        
+
+
+
+        List<String> words = new ArrayList<>(Arrays.asList("red", "blue", "orange", "green", "white"));
+        String[] words2 = new String[5];
+
+
+        System.out.println(words.size());
+        System.out.println(words2.length);
+
+
 
 
     }
 }
+
+public class Person{
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
