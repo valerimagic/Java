@@ -11,6 +11,7 @@ public class SumAdjacentEqualNumbers {
                   //      .map(Double::parseDouble)
                        // .collect(Collectors.toList());
 
+        // .collect(Collectors.toList());
 
 
 
