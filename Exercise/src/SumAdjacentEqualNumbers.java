@@ -9,15 +9,11 @@ public class SumAdjacentEqualNumbers {
         //List<Double> numbers =
                 //Arrays.stream(scanner.nextLine().split(""))
                   //      .map(Double::parseDouble)
-                       // .collect(Collectors.toList());
-
-        
+                       // .collect(Collectors.toList())
 
         // .collect(Collectors.toList());
 
-
-
-
+        
 
         List<String> words = new ArrayList<>(Arrays.asList("red", "blue", "orange", "green", "white"));
         String[] words2 = new String[5];
