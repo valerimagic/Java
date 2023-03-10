@@ -14,7 +14,11 @@ public class Student {
     }
 
     public String GetFirstName() {
+
         return this.firsName;
+    }
+    public String GetLastName() {
+        return this.lastName;
     }
 
     public void SetFirstName(String firsName) {
