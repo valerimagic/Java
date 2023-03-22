@@ -43,9 +43,7 @@ public class Student {
             input = scanner.nextLine();
         }
 
-        String city = scanner.nextLine();
-        String city = scanner.nextLine();
-        String city = scanner.nextLine();
+        
         for (Student item : studentList){
             if (item.getCity().equals(city)){
                 System.out.println(item.getFirstName() + " " + item.getSecondName() + " is " + item.getAge() + " years old");
