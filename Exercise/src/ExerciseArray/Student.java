@@ -39,8 +39,7 @@ public class Student {
             String[] studentsArr = input.split(" ");
             Student student = new Student(studentsArr[0], studentsArr[1], studentsArr[2], studentsArr[3]);
             studentList.add(student);
-
-            input = scanner.nextLine();
+            
         }
 
         
