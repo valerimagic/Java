@@ -16,6 +16,7 @@ public class Cat {
     public String getColor() {
         return color;
     }
+    
 
     public void setColor(String color){
         this.color = "blue";
@@ -25,13 +26,18 @@ public class Cat {
         return name;
     }
 
+
     public void setName(String name) {
         this.name = name;
     }
 
+
+
     public void sayMquuu(){
         System.out.printf("Cat %s said: Mquuu!%n 54541", name);
     }
+
+
 
     public static void main(String[] args) {
         Cat cat = new Cat();
