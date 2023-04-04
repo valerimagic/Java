@@ -13,7 +13,28 @@ public class Train {
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
 
-        int wagonCapacity = 
+        int wagonCapacity = Integer.parseInt(scaner.nextLine());
+        String command = scaner.nextLine();
+
+        while (!command.equals("end")){
+            String[] currentCommand = command.split(" ");
+            if(currentCommand[0].equals("Add")){
+                int addNewWagonWithPassengers = Integer.parseInt(currentCommand[1]);
+                train.add(addNewWagonWithPassengers);
+            } else {
+                int addNewWagonWithPassengers = Integer.parseInt(command);
+                for (int i = 0; i < train.size(); i++) {
+                    if(addNewWagonWithPassengers + train.get(i) <= wagonCapacity){
+                        //train.set(train.get(i), addNewWagonWithPassengers + train.get(i));
+
+
+                    }
+
+                }
+            }
+            command = scaner.nextLine();
+
+        }
 
 
     }
