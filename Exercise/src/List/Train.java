@@ -25,10 +25,13 @@ public class Train {
                 int addNewWagonWithPassengers = Integer.parseInt(command);
                 for (int i = 0; i < train.size(); i++) {
                     if(addNewWagonWithPassengers + train.get(i) <= wagonCapacity){
-                        //train.set(train.get(i), addNewWagonWithPassengers + train.get(i));
+                        int number = addNewWagonWithPassengers + train.get(i);
+                        train.set(i, number);
 
 
                     }
+                    command = scaner.nextLine();
+                    addNewWagonWithPassengers = Integer.parseInt(command);
 
                 }
             }
