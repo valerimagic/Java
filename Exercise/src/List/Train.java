@@ -27,18 +27,15 @@ public class Train {
                     if(addNewWagonWithPassengers + train.get(i) <= wagonCapacity){
                         int number = addNewWagonWithPassengers + train.get(i);
                         train.set(i, number);
-
-
+                        break;
                     }
-                    command = scaner.nextLine();
-                    addNewWagonWithPassengers = Integer.parseInt(command);
-
                 }
             }
             command = scaner.nextLine();
 
         }
-
-
+        for (int item : train) {
+            System.out.printf("%d ", item);
+        }
     }
 }
