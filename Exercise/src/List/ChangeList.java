@@ -14,9 +14,10 @@ public class ChangeList {
                 .collect(Collectors.toList());
 
         String input = scanner.nextLine();
-        String[] command = input.split(" ");
 
-        while(!command.equals("end")){
+        while(!input.equals("end")){
+            String[] command = input.split(" ");
+
             if(command[0].equals("Delete")){
                 var num = Integer.parseInt(command[1]);
                 for (int i = 0; i < numbers.size(); i++) {
@@ -25,7 +26,16 @@ public class ChangeList {
                         i--;
                     }
                 }
+            } else if(command[0].equals("Insert")){
+                int num = Integer.parseInt(command[1]);
+                int numPosition = Integer.parseInt(command[2]);
+                numbers.add(numPosition, num);
             }
+            input = scanner.nextLine();
+        }
+
+        for (Integer number : numbers) {
+            System.out.printf("%d ", number);
         }
     }
 }
