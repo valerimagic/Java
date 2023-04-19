@@ -10,25 +10,29 @@ public class HouseParty {
         Scanner scanner = new Scanner(System.in);
         int numberOfCommand = Integer.parseInt(scanner.nextLine());
 
-        ArrayList<String> list = new ArrayList<String>();
-        String input = scanner.nextLine();
+        ArrayList<String> list = new ArrayList<>();
 
         for (int i = 0; i < numberOfCommand; i++) {
-            String[] separated = input.split(" ");
+            String[] separated = scanner.nextLine().split(" ");
 
             if (separated[2].equals("going!") && list.contains(separated[0])) {
 
-                System.out.printf("%s is already in the list!", separated[0]);
+                System.out.printf("%s is already in the list!%n", separated[0]);
+            }
+            else if (separated[2].equals("not")) {
+                if (list.contains(separated[0])) {
+                    list.remove(separated[0]);
+                } else {
+                    System.out.printf("%s is not in the list!%n", separated[0]);
+                }
             } else {
                 list.add(separated[0]);
             }
-            input = scanner.nextLine();
         }
 
-
-
-
+        for (String s : list) {
+            System.out.printf("%s%n", s);
+        }
     }
-
 }
 
