@@ -30,6 +30,7 @@ public class HouseParty {
             }
         }
 
+        
         for (String s : list) {
             System.out.printf("%s%n", s);
         }
