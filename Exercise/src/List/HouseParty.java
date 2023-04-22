@@ -29,8 +29,8 @@ public class HouseParty {
                 list.add(separated[0]);
             }
         }
-
         
+
         for (String s : list) {
             System.out.printf("%s%n", s);
         }
