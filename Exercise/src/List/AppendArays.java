@@ -14,9 +14,6 @@ public class AppendArays {
             for (int j = 0; j < current.length; j++) {
                 if (!current[j].equals("")) {
                     list.offer(current[j]);
-
-
-                    
                 }
             }
         }
