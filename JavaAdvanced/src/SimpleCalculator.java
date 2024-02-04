@@ -1,4 +1,10 @@
 import java.util.*;
+//package com.softuni;
+import java.util.ArrayDeque;
+import java.util.Collection;
+import java.util.Scanner;
+
+
 
 import static jdk.internal.org.jline.utils.Colors.s;
 
@@ -15,7 +21,19 @@ public class SimpleCalculator {
             String operator = numbers.pop();
             int secondNumber = Integer.parseInt(numbers.pop());
 
+            int result = 0;
+            if(operator.equals("+")){
+                result = firstNumber + secondNumber;
+            }
+            else {
+                result = firstNumber - secondNumber;
+            }
+
+            numbers.push(String.valueOf(result));
+
         }
+
+        System.out.println(numbers.peek());
 
 
     }
