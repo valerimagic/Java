@@ -1,10 +1,6 @@
 import java.util.*;
-//package com.softuni;
 import java.util.ArrayDeque;
-import java.util.Collection;
 import java.util.Scanner;
-
-
 
 import static jdk.internal.org.jline.utils.Colors.s;
 
@@ -28,13 +24,9 @@ public class SimpleCalculator {
             else {
                 result = firstNumber - secondNumber;
             }
-
             numbers.push(String.valueOf(result));
-
         }
 
         System.out.println(numbers.peek());
-
-
     }
 }
