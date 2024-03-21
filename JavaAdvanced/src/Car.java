@@ -24,4 +24,10 @@ public class Car {
     public void setHorsePower(int horsePower){
         this.horsePower = horsePower;
     }
+
+    public Car(String brand, String model, int horsePower){
+        this.brand = brand;
+        this.model = model;
+        this.horsePower = horsePower;
+    }
 }
