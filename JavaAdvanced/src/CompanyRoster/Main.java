@@ -9,20 +9,20 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int number = Integer.parseInt(scanner.nextLine());
 
-        List<Employee> employeeList = new ArrayList<>();
-        List<Deparment> deparmentList = new ArrayList<>();
+        //List<Employee> employeeList = new ArrayList<>();
+        //List<Deparment> deparmentList = new ArrayList<>();
 
         for (int i = 0; i < number; i++) {
-            String[] input = scanner.nextLine().split("//S+");
+
+            String[] input = scanner.nextLine().split("\\s+");
+
 
             String name = input[0];
-            double salary = Double.parseDouble(input[1]);
+            int salary = Integer.parseInt(input[1]);
             String position = input[2];
             String department = input[3];
 
             Employee current = new Employee();
-
-
 
             if(input.length == 6){
                 String email = input[4];
@@ -40,11 +40,18 @@ public class Main {
             else {
                 current = new Employee(name, salary, position, department);
             }
-            employeeList.add(current);
-
-            if(!deparmentList.stream().anyMatch(deparment -> deparment.getName().equals(department))){
-                
-            }
+//            employeeList.add(current);
+//
+//            if(!deparmentList.stream().anyMatch(deparment -> deparment.getName().equals(department))){
+//                Deparment newDeparment = new Deparment(department);
+//                deparmentList.add(newDeparment);
+//                   }
+//
+//            Deparment currentDep = deparmentList.stream()
+//                    .filter(d->d.getName().equals(department))
+//                    .findFirst().get();
+//
+//            currentDep.addEmloyee(current);
 
 
 

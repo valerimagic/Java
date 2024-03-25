@@ -2,16 +2,16 @@ package CompanyRoster;
 
 public class Employee {
     private String name;
-    private  double salary;
+    private  int salary;
     private String position;
     private String department;
     private String email;
     private int age;
 
-    public Employee(String name, double salary, String position, String department, int age){
+    public Employee(String name, int salary, String position, String department, int age){
         this(name, salary, position, department, "n/a", age);
     }
-    public Employee(String name, double salary, String position, String department, String email, int age){
+    public Employee(String name, int salary, String position, String department, String email, int age){
         this.name=name;
         this.salary = salary;
         this.position = position;
@@ -19,10 +19,10 @@ public class Employee {
         this.email = email;
         this.age = age;
     }
-    public Employee(String name, double salary, String position, String department, String email){
+    public Employee(String name, int salary, String position, String department, String email){
         this(name, salary, position, department, email, -1);
     }
-    public Employee(String name, double salary, String position, String department){
+    public Employee(String name, int salary, String position, String department){
         this(name, salary, position, department, "n/a", -1);
     }
     public Employee(){
@@ -37,11 +37,11 @@ public class Employee {
         this.name = name;
     }
 
-    public double getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
